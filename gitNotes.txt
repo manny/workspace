@@ -1,0 +1,18 @@
+branch -b branchname // makes branch
+branch -d branchname // delete branch
+
+checkout branchname //switches to branch
+
+branch // displays current branch
+
+git diff // trash can
+
+git reset HEAD filename // unstage file from staging area
+
+git checkout 'file id' // moves head to specified commit
+
+git log -v   // shows files commited
+
+git remote -v // shows places to push to
+
+git add // only works with new or modified files
