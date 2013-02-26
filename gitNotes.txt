@@ -21,3 +21,6 @@ git pull // updates repo from github
 
 git clone 'ssh link' // makes copy of repo
 
+git rm // remove file from repo
+
+
