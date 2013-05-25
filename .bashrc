@@ -85,7 +85,7 @@ alias l='ls -CF'
 alias jsed='ssh -p2222 mjl288@jsedlacek.info'
 alias ilab='ssh mjl288@vi.rutgers.edu'
 alias up='ping "www.google.com"'
-alias pi='ssh 192.168.1.8 -l pi'
+alias pi='ssh 192.168.1.24 -l pi'
 alias myserver='ssh mjl288@198.199.82.132'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
