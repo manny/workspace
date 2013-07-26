@@ -9,6 +9,7 @@ call vundle#rc()
 "let vundle manage vundle
 Bundle 'gmarik/vundle'
 Bundle 'derekwyatt/vim-scala'
+Bundle 'flazz/vim-colorschemes'
 
 filetype plugin indent on
 
@@ -21,7 +22,9 @@ set ruler "Sets up status bar"
 set laststatus=2 "Always keeps the status bar active"
 set number "Turns on line numbering"
 set t_Co=256 "Sets Vim to use 256 colors"
-colorscheme pablo
+"colorscheme darkburn
+"colorscheme lucius
+colorscheme synic
 set background=dark
 
 
