@@ -5,7 +5,7 @@ checkout branchname //switches to branch
 
 branch // displays current branch
 
-git diff // trash can
+git diff // shows changes, trash can
 
 git reset HEAD filename // unstage file from staging area
 

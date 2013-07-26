@@ -1,6 +1,19 @@
 "Basic settings"
 "=============================================================================="
-set nocompatible "Fixes old Vi bugs"
+"vundle stuff
+filetype off
+
+set rtp+=~/.vim/bundle/vundle
+call vundle#rc()
+
+"let vundle manage vundle
+Bundle 'gmarik/vundle'
+Bundle 'derekwyatt/vim-scala'
+
+filetype plugin indent on
+
+
+set nocompatible "fixes old vi bugs"
 syntax on
 set backspace=2 "Makes backspace work"
 set history=500 "Sets undo history size"
