@@ -23,4 +23,6 @@ git clone 'ssh link' // makes copy of repo
 
 git rm // remove file from repo
 
+git checkout $hash name_of_file + git commit -m 'got from back in time'  // restore an old file version
+
 
