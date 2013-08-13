@@ -1,2 +1,1 @@
-Manny Lopez 2.0
-git log
+Manny's random assortment of things he finds useful
