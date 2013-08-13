@@ -1,0 +1,54 @@
+Manuel Lopez
+email: mjl288@scarletmail.rutgers.edu
+github.com/mannyjl625
+
+Campus Address
+Rutgers University
+4908 BPO Way
+Piscataway, NJ 08854
+
+Permanent Address
+428 Spencer Place
+Millvile NJ 08332
+(856) 558-2697 
+
+
+EDUCATION: Rutgers University, School of Arts and Sciences. New Brunswick, NJ   
+B.S. Computer Science, Expected May 2015                                                          
+Major G.P.A.: 3.5
+
+COMPUTER SKILLS:    Java, Scala, PHP, JavaScript, Python, HTML/CSS                                             
+
+EXPERIENCE:          
+
+Software Engineer Intern 
+Summer 2013 
+IGN, San Francisco, CA
+·      Collaborated with engineering and product teams to develop an API extension that ranked content popularity using stored Google Analytics data
+·      Added Klout functionality to IGN's social API that allows users to see their network of influence within the community
+·      Utilized the python application deployment framework Fabric to overhaul the automated deployment process of several APIs
+·      Gained real-world experience with model view controller and domain driven design programming paradigms
+·      Used Maven and Play SBT build tools to construct and test APIs
+
+Lab Consultant    
+March 2012-Present
+New Brunswick Computing Services, New Brunswick, NJ
+·      Assisted patrons with UNIX account issues
+·      Received formal training in working within a UNIX environment
+·      Performed troubleshooting on down machines
+·      Provided customer service for patrons with lab software
+·      Used organization and teamwork skills to complete lab duties
+·      Gained working knowledge in wide range of software products
+
+ACTIVITIES:            
+
+Member, Undergraduate Student Alliance of Computer Scientists Spring 2012-Present 
+
+
+ACHIEVEMENTS:  
+
+Best Hardware Hack, Hack NY Spring 2013
+github.com/mannyjl625/Laser-Tank 
+
+2nd Place Best Application, Pocket Gems Hack4Diversity 2013
+github.com/mannyjl625/Lukup
