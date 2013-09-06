@@ -17,7 +17,8 @@ EDUCATION: Rutgers University, School of Arts and Sciences. New Brunswick, NJ
 B.S. Computer Science, Expected May 2015                                                          
 Major G.P.A.: 3.5
 
-COMPUTER SKILLS:    Java, Scala, PHP, JavaScript, Python, HTML/CSS                                             
+PROGRAMMING
+LANGUAGES:    PHP, JavaScript, Scala, Python, Java,  C                                             
 
 EXPERIENCE:          
 
@@ -27,11 +28,11 @@ IGN, San Francisco, CA
 ·      Collaborated with engineering and product teams to develop an API extension that ranked content 
 	   popularity using stored Google Analytics data
 ·      Added Klout functionality to IGN's social API that allows users to see their network of influence 
-	   within the community
+	   within the user community
 ·      Utilized the python application deployment framework Fabric to overhaul the automated deployment 
 	   process of several APIs
-·      Gained real-world experience with model view controller and domain driven design programming paradigms
-·      Used Maven and Play SBT build tools to construct and test APIs
+·      Gained real-world experience with model-view-controller and domain-driven design programming paradigms
+·      Used Maven and Play SBT tools to build, run and test several APIs
 
 Lab Consultant    
 March 2012-Present
