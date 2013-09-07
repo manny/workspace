@@ -1,7 +1,7 @@
-branch -b branchname // makes branch
-branch -d branchname // delete branch
+git branch -b branchname // makes branch
+git branch -d branchname // delete branch
 
-checkout branchname //switches to branch
+git checkout branchname //switches to branch
 
 branch // displays current branch
 
@@ -24,5 +24,7 @@ git clone 'ssh link' // makes copy of repo
 git rm // remove file from repo
 
 git checkout $hash name_of_file + git commit -m 'got from back in time'  // restore an old file version
+
+git stash // store changes so you can do other things
 
 
