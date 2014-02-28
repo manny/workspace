@@ -83,10 +83,13 @@ alias la='ls -A'
 alias l='ls -CF'
 #my aliases
 alias jsed='ssh -p2222 mjl288@jsedlacek.info'
-alias ilab='ssh mjl288@vi.rutgers.edu'
+alias ilab='ssh mjl288@vi.cs.rutgers.edu'
 alias up='ping "www.google.com"'
-alias pi='ssh 192.168.1.24 -l pi'
-alias myserver='ssh mjl288@198.199.82.132'
+alias pi='ssh 192.168.1.8 -l pi'
+alias myserver='ssh mjl288@mannyjl625.info	'
+alias kcmc='ssh manny@198.211.113.134'
+alias simplehttp='python -m SimpleHTTPServer'
+alias phpserver='php -S localhost:8000'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
@@ -106,3 +109,7 @@ fi
 if [ -f /etc/bash_completion ] && ! shopt -oq posix; then
     . /etc/bash_completion
 fi
+
+
+
+

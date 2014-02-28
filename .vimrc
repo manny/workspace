@@ -4,6 +4,14 @@
 filetype off
 
 set rtp+=~/.vim/bundle/vundle
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+
+"always show status line
+set laststatus=2
+
+"use 256 colors
+set t_CO=256
+
 call vundle#rc()
 
 "let vundle manage vundle
@@ -12,6 +20,9 @@ Bundle 'derekwyatt/vim-scala'
 Bundle 'flazz/vim-colorschemes'
 
 filetype plugin indent on
+
+
+
 
 
 set nocompatible "fixes old vi bugs"
