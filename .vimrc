@@ -1,4 +1,4 @@
-"Basic settings"
+"basic settings"
 "=============================================================================="
 "vundle stuff
 filetype off
@@ -26,6 +26,13 @@ set t_Co=256 "Sets Vim to use 256 colors"
 "colorscheme lucius
 colorscheme synic
 set background=dark
+
+
+set cursorline
+set cursorcolumn
+
+"unhighlight
+nnoremap <silent> <C-l> :nohl<CR><C-l>
 
 
 "Indentation settings"
