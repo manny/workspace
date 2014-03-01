@@ -18,6 +18,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'flazz/vim-colorschemes'
+Bundle 'yegappan/mru'
 
 filetype plugin indent on
 
