@@ -19,12 +19,12 @@ Bundle 'gmarik/vundle'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'flazz/vim-colorschemes'
 Bundle 'yegappan/mru'
+Bundle 'scrooloose/nerdtree'
+
+"for nerdtree
+map <C-n> :NERDTreeToggle<CR>
 
 filetype plugin indent on
-
-
-
-
 
 set nocompatible "fixes old vi bugs"
 syntax on
