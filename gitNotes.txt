@@ -3,7 +3,7 @@ git branch -d branchname // delete branch
 
 git checkout branchname //switches to branch
 
-branch // displays current branch
+git branch // displays current branch
 
 git diff // shows changes, trash can
 
@@ -27,4 +27,6 @@ git checkout $hash name_of_file + git commit -m 'got from back in time'  // rest
 
 git stash // store changes so you can do other things
 
+git reset --hard HEAD^  //go back 1 commit. forget current commit
 
+git rebase -i HEAD^^ //rebase last 2 commits. push with -f afterwards
