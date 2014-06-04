@@ -4,7 +4,8 @@
 filetype off
 
 set rtp+=~/.vim/bundle/vundle
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+"set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
 "always show status line
 set laststatus=2
@@ -16,10 +17,10 @@ call vundle#rc()
 
 "let vundle manage vundle
 Bundle 'gmarik/vundle'
-Bundle 'derekwyatt/vim-scala'
+"Bundle 'derekwyatt/vim-scala'
 Bundle 'flazz/vim-colorschemes'
-Bundle 'yegappan/mru'
-Bundle 'scrooloose/nerdtree'
+"Bundle 'yegappan/mru'
+"Bundle 'scrooloose/nerdtree'
 
 "for nerdtree
 map <C-n> :NERDTreeToggle<CR>
@@ -31,13 +32,14 @@ syntax on
 set backspace=2 "Makes backspace work"
 set history=500 "Sets undo history size"
 set ruler "Sets up status bar"
-set laststatus=2 "Always keeps the status bar active"
 set number "Turns on line numbering"
 set t_Co=256 "Sets Vim to use 256 colors"
-"colorscheme darkburn
-"colorscheme lucius
-colorscheme synic
-set background=dark
+colorscheme jellybeans
+"set background=dark
+
+set term=xterm-256color
+set encoding=utf-8
+set termencoding=utf-8
 
 
 set cursorline
