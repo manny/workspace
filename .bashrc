@@ -3,7 +3,7 @@
 # for examples
 
 # If not running interactively, don't do anything
-[ -z "$PS1" ] && return
+#[ -z "$PS1" ] && return
 
 # don't put duplicate lines in the history. See bash(1) for more options
 # ... or force ignoredups and ignorespace
@@ -82,12 +82,7 @@ alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 #my aliases
-alias jsed='ssh -p2222 mjl288@jsedlacek.info'
-alias ilab='ssh mjl288@vi.cs.rutgers.edu'
 alias up='ping "www.google.com"'
-alias pi='ssh 192.168.1.8 -l pi'
-alias myserver='ssh mjl288@mannyjl625.info'
-alias kcmc='ssh manny@198.211.113.134'
 alias simplehttp='python -m SimpleHTTPServer'
 alias phpserver='php -S localhost:8000'
 # Add an "alert" alias for long running commands.  Use like so:
@@ -157,4 +152,17 @@ function parse_git_dirty {
     fi
 }
 
-export PS1="\\$\u@\h:\w\`parse_git_branch\` "
+#export PS1="\\$\u@\h:\w\`parse_git_branch\` "
+#export EDITOR=/usr/bin/vim
+
+#Sets MAIL env variable
+#MAIL=/var/spool/mail/Manuel && export MAIL
+
+### Added by the Heroku Toolbelt
+#export PATH="/usr/local/heroku/bin:$PATH"
+
+
+## Android
+
+#export PATH=${PATH}:~/programming/Android/Skd/tools
+#export PATH=${PATH}:~/programming/Android/Skd/platform-tools

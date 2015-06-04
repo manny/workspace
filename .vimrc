@@ -4,8 +4,9 @@
 filetype off
 
 set rtp+=~/.vim/bundle/vundle
-"set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
-source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
+
+set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+"source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
 "always show status line
 set laststatus=2
@@ -17,10 +18,13 @@ call vundle#rc()
 
 "let vundle manage vundle
 Bundle 'gmarik/vundle'
-"Bundle 'derekwyatt/vim-scala'
+Bundle 'derekwyatt/vim-scala'
 Bundle 'flazz/vim-colorschemes'
-"Bundle 'yegappan/mru'
-"Bundle 'scrooloose/nerdtree'
+Bundle 'yegappan/mru'
+Bundle 'scrooloose/nerdtree'
+Bundle 'valeriangalliat/dogescript'
+Bundle 'fatih/vim-go'
+Bundle 'scrooloose/syntastic.git'
 
 "for nerdtree
 map <C-n> :NERDTreeToggle<CR>
@@ -41,7 +45,6 @@ set term=xterm-256color
 set encoding=utf-8
 set termencoding=utf-8
 
-
 set cursorline
 set cursorcolumn
 
@@ -52,6 +55,7 @@ nnoremap <silent> <C-l> :nohl<CR><C-l>
 "Indentation settings"
 "=============================================================================="
 set tabstop=4 "Sets display width of tabs"
+set softtabstop=4
 set shiftwidth=4 "Sets indentation width"
 set autoindent "Turns on auto-indenting"
 set smartindent "Remembers previous indent when creating new lines"
@@ -59,8 +63,7 @@ set smartindent "Remembers previous indent when creating new lines"
 "Choose between tabs and spaces for indentation by uncommenting one of
 "these two. Expand for spaces, noexpand for tabs:"
 "set noexpandtab
-"set expandtab
-"
+set expandtab
 set smarttab "Smarter indentation management regardless of tabs/spaces"
 
 
@@ -78,3 +81,32 @@ set smartcase "Unless you put some caps in your search term"
 inoremap jj <Esc>`^
 "Turn on plugin & indentation for specific filetypes"
 filetype plugin indent on
+
+fun! FuckTrailingWhitespace()
+        autocmd BufWritePre <buffer> :%s/\s\+$//e
+endfun
+
+"set javascript preferences
+autocmd FileType javascript
+    \ set expandtab |
+    \ set shiftwidth=2 |
+    \ set softtabstop=2 |
+    \ call FuckTrailingWhitespace() |
+    \ let g:syntastic_javascript_checkers=['']
+" set python preferences
+autocmd FileType python
+    \ set shiftwidth=4 | 
+    \ set softtabstop=4 |
+    \ set smarttab |
+    \ set expandtab |
+    \ call FuckTrailingWhitespace() |
+    \ let g:syntastic_python_checkers = ['pyflakes']
+" set clojure preferences
+autocmd FileType clojure
+    \ call FuckTrailingWhitespace()
+" set puppet preferences
+autocmd FileType puppet
+    \ set expandtab |
+    \ set shiftwidth=2 |
+    \ set softtabstop=2 |
+    \ call FuckTrailingWhitespace()
