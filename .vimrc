@@ -3,9 +3,10 @@
 "vundle stuff
 filetype off
 
-set rtp+=~/.vim/bundle/vundle
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
 
-set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
+"set rtp+=$HOME/.local/lib/python2.7/site-packages/powerline/bindings/vim/
 "source /usr/local/lib/python2.7/site-packages/powerline/bindings/vim/plugin/powerline.vim
 
 "always show status line
@@ -14,17 +15,15 @@ set laststatus=2
 "use 256 colors
 set t_CO=256
 
-call vundle#rc()
 
 "let vundle manage vundle
-Bundle 'gmarik/vundle'
-Bundle 'derekwyatt/vim-scala'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'yegappan/mru'
-Bundle 'scrooloose/nerdtree'
-Bundle 'valeriangalliat/dogescript'
-Bundle 'fatih/vim-go'
-Bundle 'scrooloose/syntastic.git'
+Plugin 'Lokaltog/vim-powerline.git'
+Plugin 'gmarik/vundle'
+Plugin 'derekwyatt/vim-scala'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'yegappan/mru'
+Plugin 'scrooloose/nerdtree'
+call vundle#end()
 
 "for nerdtree
 map <C-n> :NERDTreeToggle<CR>

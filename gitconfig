@@ -13,7 +13,7 @@
 		tool = vimdiff
 [alias]
 		d = difftool
-		coo = checkout
+		co = checkout
 		s = status
 		l = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 		lb = log --pretty=format:'%h -%d %s (%cr) <%an>' --abbrev-commit
