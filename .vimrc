@@ -23,13 +23,36 @@ Plugin 'derekwyatt/vim-scala'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'yegappan/mru'
 Plugin 'scrooloose/nerdtree'
+Plugin 'guns/vim-clojure-static'
+Plugin 'oblitum/rainbow'
+Plugin 'tpope/vim-fireplace'
+Plugin 'rodjek/vim-puppet.git'
+Plugin 'kien/ctrlp.vim.git'
+
 call vundle#end()
 
 "for nerdtree
 map <C-n> :NERDTreeToggle<CR>
 
-filetype plugin indent on
+"for MRU
+map <C-m> :CtrlPMixed<CR>
 
+"fireplace shortcuts
+map <C-e> :Eval<CR>
+map <C-t> :%Eval<CR>
+
+"ctrlp settings
+let g:ctrl_max_files=0
+let g:ctrlp_dotfiles = 0
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*.git,*.class
+
+if executable('ag')
+    let g:ctrlp_user_command = 'ag %s -l --nocolor -g ""'
+endif
+
+"general settings
+filetype plugin indent on
 set nocompatible "fixes old vi bugs"
 syntax on
 set backspace=2 "Makes backspace work"
@@ -48,8 +71,13 @@ set cursorline
 set cursorcolumn
 
 "unhighlight
-nnoremap <silent> <C-l> :nohl<CR><C-l>
+nnoremap <silent> <C-i> :nohl<CR><C-n>
 
+"vsplit navigation shortcuts
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
 
 "Indentation settings"
 "=============================================================================="
@@ -61,7 +89,6 @@ set smartindent "Remembers previous indent when creating new lines"
 "
 "Choose between tabs and spaces for indentation by uncommenting one of
 "these two. Expand for spaces, noexpand for tabs:"
-"set noexpandtab
 set expandtab
 set smarttab "Smarter indentation management regardless of tabs/spaces"
 
@@ -78,6 +105,7 @@ set smartcase "Unless you put some caps in your search term"
 "=============================================================================="
 "Use jj instead of escape in insert mode"
 inoremap jj <Esc>`^
+
 "Turn on plugin & indentation for specific filetypes"
 filetype plugin indent on
 
@@ -90,7 +118,7 @@ autocmd FileType javascript
     \ set expandtab |
     \ set shiftwidth=2 |
     \ set softtabstop=2 |
-    \ call FuckTrailingWhitespace() |
+    "\ call FuckTrailingWhitespace() |
     \ let g:syntastic_javascript_checkers=['']
 " set python preferences
 autocmd FileType python
@@ -98,14 +126,26 @@ autocmd FileType python
     \ set softtabstop=4 |
     \ set smarttab |
     \ set expandtab |
-    \ call FuckTrailingWhitespace() |
+    "\ call FuckTrailingWhitespace() |
     \ let g:syntastic_python_checkers = ['pyflakes']
 " set clojure preferences
-autocmd FileType clojure
-    \ call FuckTrailingWhitespace()
+"autocmd FileType clojure
+ "   \ call FuckTrailingWhitespace()
 " set puppet preferences
 autocmd FileType puppet
     \ set expandtab |
     \ set shiftwidth=2 |
     \ set softtabstop=2 |
-    \ call FuckTrailingWhitespace()
+    "\ call FuckTrailingWhitespace()
+
+autocmd FileType html
+    \ set expandtab |
+    \ set shiftwidth=2 |
+    \ set softtabstop=2 |
+    "\ call FuckTrailingWhitespace()
+
+autocmd FileType java
+    \ set expandtab |
+    \ set shiftwidth=2 |
+    \ set softtabstop=2 |
+    "\ call FuckTrailingWhitespace()
